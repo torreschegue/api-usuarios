@@ -25,7 +25,7 @@ public class UserService {
 	@PostConstruct // Indicar que este metodo tenga peoridad de inicializar cada vez que sea ejecutado
 	public void init() {
 		for(int i = 0; i<10; i++) {
-			user.add((new User(faker.idNumber().invalid(),faker.funnyName().name(), faker.name().username(),faker.dragonBall().character() )));
+			user.add((new User(faker.internet().uuid(),faker.funnyName().name(), faker.name().username(),faker.dragonBall().character() )));
 		}
 	}
 	
